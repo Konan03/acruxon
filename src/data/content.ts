@@ -1,53 +1,57 @@
-import { CodeXml, MonitorCog, ShieldCheck, Layers3, Handshake, Headset, LayoutDashboard, PanelsTopLeft, Gauge } from "lucide-react";
+import {
+  CodeXml, MonitorCog, ShieldCheck, Layers3, Handshake, Headset,
+  MessageSquare, ScanSearch, Wrench, CircleCheck,
+} from "lucide-react";
+import { images } from "./images";
 
 export const services = [
   {
-    id: "soporte", title: "Soporte técnico", icon: MonitorCog,
-    description: "Mantenemos tus equipos en óptimas condiciones mediante diagnóstico, mantenimiento, reparación y optimización.",
-    highlights: ["Diagnóstico y reparación", "Mantenimiento preventivo y correctivo", "Optimización de equipos", "Instalación y configuración de software"],
+    id: "soporte", title: "Soporte técnico", icon: MonitorCog, image: images.soporte,
+    description: "Recupera el rendimiento de tus equipos.",
+    highlights: ["Diagnóstico y reparación", "Mantenimiento", "Optimización", "Software y componentes"],
     details: [
-      ["Diagnóstico y reparación", "Evaluamos fallas y planteamos soluciones para portátiles y computadores de escritorio."],
-      ["Mantenimiento y rendimiento", "Realizamos mantenimiento preventivo y correctivo, optimización y actualización de componentes."],
-      ["Configuración y asesoría", "Instalamos y configuramos software y te orientamos sobre el uso y cuidado de tus equipos."],
+      ["Diagnóstico y reparación", "Portátiles y computadores de escritorio."],
+      ["Mantenimiento y rendimiento", "Mantenimiento preventivo y correctivo, optimización y actualización de componentes."],
+      ["Configuración y asesoría", "Instalación de software y orientación para cuidar tus equipos."],
     ],
   },
   {
-    id: "software", title: "Desarrollo de software", icon: CodeXml,
-    description: "Transformamos ideas y necesidades empresariales en soluciones digitales modernas, escalables y personalizadas.",
-    highlights: ["Desarrollo web", "Software a medida", "Aplicaciones empresariales", "Integración de sistemas y APIs"],
+    id: "software", title: "Desarrollo de software", icon: CodeXml, image: images.desarrollo,
+    description: "Convierte tus ideas en herramientas digitales.",
+    highlights: ["Desarrollo web", "Software a medida", "Aplicaciones empresariales", "APIs y automatización"],
     details: [
-      ["Sitios y aplicaciones web", "Diseñamos páginas responsivas, aplicaciones empresariales y sistemas de información a medida."],
-      ["APIs y automatización", "Integramos APIs REST y bases de datos para conectar herramientas y simplificar procesos."],
-      ["Evolución y consultoría", "Te orientamos sobre decisiones técnicas y damos mantenimiento y actualización a aplicaciones."],
+      ["Web y aplicaciones", "Sitios responsivos, aplicaciones empresariales y sistemas de información."],
+      ["Integraciones", "APIs REST, bases de datos y automatización de procesos."],
+      ["Evolución y consultoría", "Mantenimiento de aplicaciones y orientación tecnológica."],
     ],
   },
 ];
 
 export const features = [
-  { title: "Atención personalizada", icon: Handshake, description: "Analizamos cada necesidad para ofrecer soluciones adecuadas a cada cliente." },
-  { title: "Soluciones integrales", icon: Layers3, description: "Combinamos soporte técnico y desarrollo de software en una misma empresa." },
-  { title: "Enfoque en calidad", icon: ShieldCheck, description: "Buscamos implementar soluciones confiables, eficientes y fáciles de mantener." },
-  { title: "Acompañamiento tecnológico", icon: Headset, description: "Orientamos a nuestros clientes durante el proceso de implementación de sus soluciones." },
+  { title: "A tu medida", icon: Handshake, description: "Partimos de lo que necesitas." },
+  { title: "Visión integral", icon: Layers3, description: "Equipos y software conectados." },
+  { title: "Calidad técnica", icon: ShieldCheck, description: "Soluciones confiables y mantenibles." },
+  { title: "Acompañamiento", icon: Headset, description: "Orientación en cada etapa." },
 ];
 
 export const projects = [
-  { title: "Sistema de gestión empresarial", category: "Desarrollo de software", icon: LayoutDashboard, description: "Aplicación web para administrar procesos, usuarios e información empresarial." },
-  { title: "Sitio web corporativo", category: "Desarrollo web", icon: PanelsTopLeft, description: "Plataforma web moderna y responsiva para presentar servicios y facilitar el contacto con clientes." },
-  { title: "Optimización de equipos", category: "Soporte técnico", icon: Gauge, description: "Ejemplo de servicio de diagnóstico, mantenimiento y optimización de equipos de cómputo." },
+  { title: "Gestión empresarial", category: "Software a medida", image: images.codigo, description: "Procesos, usuarios e información en un solo lugar." },
+  { title: "Web corporativa", category: "Desarrollo web", image: images.colaboracion, description: "Una presencia digital para acercarte a tus clientes." },
+  { title: "Equipos optimizados", category: "Soporte técnico", image: images.diagnostico, description: "Diagnóstico y mantenimiento para mejorar el rendimiento." },
 ];
 
 export const process = [
-  ["Cuéntanos tu necesidad", "Recibimos tu solicitud y conocemos el problema o proyecto."],
-  ["Analizamos la solución", "Evaluamos las alternativas y definimos una propuesta."],
-  ["Implementamos", "Desarrollamos o ejecutamos el servicio acordado."],
-  ["Te acompañamos", "Realizamos la entrega y brindamos orientación sobre la solución."],
+  { title: "Te escuchamos", description: "Cuéntanos qué necesitas.", icon: MessageSquare },
+  { title: "Proponemos", description: "Definimos la solución contigo.", icon: ScanSearch },
+  { title: "Implementamos", description: "Ponemos manos a la obra.", icon: Wrench },
+  { title: "Te acompañamos", description: "Entregamos y te orientamos.", icon: CircleCheck },
 ];
 
 export const faq = [
-  ["¿Qué servicios ofrece Acruxon?", "Ofrecemos soporte técnico y mantenimiento de equipos, desarrollo de software y consultoría tecnológica."],
-  ["¿Puedo solicitar una cotización sin compromiso?", "Sí. Cuéntanos qué necesitas para que podamos evaluar el alcance y preparar una propuesta."],
-  ["¿Desarrollan software personalizado?", "Sí. El alcance se define según tus objetivos, procesos y necesidades de integración."],
-  ["¿Realizan mantenimiento de computadores portátiles y de escritorio?", "Sí. Atendemos equipos portátiles y de escritorio para diagnóstico, mantenimiento y optimización."],
-  ["¿Cómo puedo solicitar un servicio?", "Puedes preparar tu consulta en la sección de contacto. Los canales disponibles se indican allí."],
-  ["¿Trabajan con personas y empresas?", "Sí. Las soluciones están dirigidas a personas, emprendedores y empresas."],
+  ["¿Qué servicios ofrecen?", "Soporte técnico, mantenimiento, desarrollo de software y consultoría tecnológica."],
+  ["¿Puedo solicitar una cotización sin compromiso?", "Sí. Cuéntanos tu necesidad para evaluar el alcance y preparar una propuesta."],
+  ["¿Crean software a medida?", "Sí. Desarrollamos soluciones adaptadas a tus procesos y objetivos."],
+  ["¿Atienden portátiles y computadores de escritorio?", "Sí. Realizamos diagnóstico, mantenimiento, reparación y optimización."],
+  ["¿Cómo solicito un servicio?", "Prepara tu consulta en Contacto y revisa allí los canales disponibles."],
+  ["¿Trabajan con personas y empresas?", "Sí, con personas, emprendedores y empresas."],
 ];

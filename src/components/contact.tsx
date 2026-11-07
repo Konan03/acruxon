@@ -11,7 +11,7 @@ export function Contact() {
   ];
   return <section className="section band" id="contacto"><div className="wrap contact-grid">
     <div>
-      <SectionHeading label="07 / Contacto" title="Hablemos de tu próximo proyecto">¿Necesitas soporte técnico o estás buscando desarrollar una solución digital? Cuéntanos qué necesitas y encontraremos la mejor manera de ayudarte.</SectionHeading>
+      <SectionHeading label="07 / Contacto" title="Hablemos de tu idea">Cuéntanos qué necesitas. Busquemos juntos la solución.</SectionHeading>
       <ul className="channels">{channels.map(({ name, icon: Icon, value, href }) => <li key={name}>
         <span className="icon-tile"><Icon size={21} aria-hidden /></span><div><strong>{name}</strong>{href ? <a href={href}>{value}</a> : <p>{value ?? "Pendiente de configuración"}</p>}</div>
       </li>)}</ul>
